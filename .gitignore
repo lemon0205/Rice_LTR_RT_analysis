@@ -1,0 +1,36 @@
+# Large or access-controlled primary/processed data
+data/raw/
+data/processed/
+data/intermediate/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bam.bai
+*.cram
+*.cram.crai
+*.bw
+*.bigWig
+*.matrix.gz
+*.npz
+*.RData
+*.Rhistory
+
+# Generated reports and figures (not part of this analysis-only release)
+results/
+figures/
+*.pdf
+*.png
+*.svg
+*.tiff
+*.jpg
+
+# Local configuration, credentials, and editor/runtime files
+config/local.*
+.env
+.Renviron
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
