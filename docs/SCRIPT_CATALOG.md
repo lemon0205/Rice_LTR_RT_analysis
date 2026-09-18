@@ -1,6 +1,6 @@
-# Retained script catalog
+# Analysis script catalog
 
-This catalog describes the input and output types of the copied analysis scripts. Exact filenames, thresholds, sample sets, and model formulas remain in each script; this document does not reinterpret the analysis.
+This catalog summarizes the analysis scripts distributed with this repository. Exact filenames, thresholds, sample sets, and model formulas are defined in the source scripts.
 
 | Module | Scripts | Principal inputs | Principal analysis outputs |
 |---|---|---|---|
@@ -11,4 +11,4 @@ This catalog describes the input and output types of the copied analysis scripts
 | Solo-LTR family analysis | `01_...R`, `02_...R`, `03_...R`, `04_...R`, `06_...R`, `08_...R`, `15_...R`, `22_...R`, `23_...R`, `38_...R`, `39_...R`, `47_...R`, `50_...R` | Family-by-accession table, intact/solo LTR element tables, and quantitative epigenetic tables | Eligibility tables, context-adjusted turnover model results, evidence and robustness tables, age-composition tests, and CHH/dynamic-class statistics |
 | TE-PAV population analysis | `generate_te_matrix_synteny.py`; `dte_fst_calc.R`; `build_fst1_regions.py`; `build_te_fate_group_distance.py`; `te_nearby_gene_for_go.py`; `export_te_four_groups_go_lists.py`; `build_four_TE_class_2kb_gene_lists.R`; `run_four_TE_class_GOSlim_enrichment.R` | Per-accession TE/PAV annotations, MSU gene BED, dTE FST table, and GO-slim assignment | TE genotype matrix, dTE FST table, FST=1 regions, gene-distance summaries, nearby-gene and GO input/result tables |
 
-Scripts with a name beginning `plot_`, `draw_`, `redraw_`, `render_`, or `build_Figure` were excluded. A few mixed analysis/rendering scripts without those prefixes are documented in `REVIEW_NEEDED.md` and are also excluded.
+Figure-generation, rendering, and layout scripts are intentionally excluded. This repository distributes analysis code and tabular/statistical result generation only.
